@@ -2,7 +2,7 @@ import os
 import requests
 from flask import Flask, request
 
-app = Flask(name)
+app = Flask(__name__)
 
 # Configuración - Railway pasa el token por variable de entorno
 TOKEN = os.environ.get('TELEGRAM_TOKEN', '8264891324:AAH3O7vWVzOBcujT7eB_lDN1u32IADz4w8Q')
